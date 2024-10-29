@@ -1,0 +1,30 @@
+{
+  "name": "drizzle_turso_todo_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts", 
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "schema:gen": "drizzle-kit generate:sqlite --out ./db/migrations --schema ./db/schema.ts",
+    "schema:migrate": "ts-node src/db/migrate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@libsql/client": "^0.14.0",
+    "drizzle-orm": "^0.35.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "method-override": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/method-override": "^0.0.35",
+    "dotenv": "^16.4.5",
+    "drizzle-kit": "^0.26.2",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
