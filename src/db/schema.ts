@@ -1,5 +1,5 @@
+import {text, integer, sqliteTable, uniqueIndex } from 'drizzle-orm/sqlite-core'
 import { sql } from 'drizzle-orm'
-import { integer, sqliteTable, text, uniqueIndex } from 'drizzle-orm/sqlite-core'
 
 export const todos = sqliteTable(
   'todos',

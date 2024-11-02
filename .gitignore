@@ -1,4 +1,4 @@
 #first line
 .env
-node_modules/
+node_modules
 src/**/*.js
