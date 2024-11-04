@@ -5,7 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "schema:gen": "drizzle-kit generate:sqlite --out src/db/migrations --schema src/db/schema.ts",
+    "schema:gen": "drizzle-kit generate:sqlite",
     "schema:migrate": "ts-node src/db/migrate",
     "dev": "nodemon --watch './**/*.ts' --exec ts-node ./src/index.ts",
     "build": "npm run schema:gen && npm run schema:migrate && npx tsc",
